@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f2e9;
+    color: #333;
+}
+
+/* THANH DIEU HUONG */
+header {
+    width: 100%;
+    background-color: #183d32;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+/* LOGO */
+.logo a {
+    color: #f4d9a0;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* MENU CHINH */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #f4d9a0;
+}
+
+/* O TIM KIEM */
+.search-box form {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 13px;
+}
+
+.search-box button {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #f4d9a0;
+    color: #183d32;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-box button:hover {
+    background-color: #e7c47d;
+}
+
+/* GIO HANG */
+.cart a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.cart-count {
+    display: inline-block;
+    min-width: 22px;
+    padding: 4px 6px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background-color: #f4d9a0;
+    color: #183d32;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* DANG NHAP / DANG KY */
+.account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account a {
+    padding: 10px 12px;
+    border: 1px solid #f4d9a0;
+    border-radius: 5px;
+    color: #f4d9a0;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.account a:last-child {
+    background-color: #f4d9a0;
+    color: #183d32;
+}
+
+.account a:hover {
+    background-color: white;
+    color: #183d32;
+    border-color: white;
+}
+
+/* RESPONSIVE - MAY TINH BANG */
+@media (max-width: 1100px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* RESPONSIVE - DIEN THOAI */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box form {
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .account {
+        justify-content: center;
+    }
+}
